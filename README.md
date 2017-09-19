@@ -12,7 +12,7 @@ read more about regurgitator in yml here: [regurgitator-core-yml](http://github.
 
 a create-jms-response step returns a response from regurgitator, allowing ``response-metadata`` parameters to be set for ``jms-destination``, ``correlation-id`` and ``jms-type``:
 
-```yml:
+```yml
 create-jms-response:
  name: jms-response-creator
  source: response-param
