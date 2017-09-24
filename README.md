@@ -25,5 +25,5 @@ create-jms-response:
  jms-redelivered: true
  jms-priority: 4
  jms-reply-to: queue://other-destination
- jms-timestamp: 123456789
+ jms-timestamp: 1506253192636
 ```
