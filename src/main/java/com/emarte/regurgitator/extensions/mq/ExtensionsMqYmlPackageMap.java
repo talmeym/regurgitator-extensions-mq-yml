@@ -11,9 +11,9 @@ import java.util.*;
 import static java.util.Collections.singletonList;
 
 public class ExtensionsMqYmlPackageMap extends AbstractYmlPackageMap {
-	private static final List<String> kinds = singletonList("create-jms-response");
+    private static final List<String> kinds = singletonList("create-jms-response");
 
-	public ExtensionsMqYmlPackageMap() {
-		addPackageMapping(kinds, "com.emarte.regurgitator.extensions.mq");
-	}
+    public ExtensionsMqYmlPackageMap() {
+        addPackageMapping(kinds, "com.emarte.regurgitator.extensions.mq");
+    }
 }
