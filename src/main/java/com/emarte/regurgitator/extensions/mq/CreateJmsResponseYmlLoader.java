@@ -21,9 +21,9 @@ public class CreateJmsResponseYmlLoader implements YmlLoader<CreateJmsResponse> 
         String type = loadOptionalStr(yaml, JMS_TYPE);
         String destination = loadOptionalStr(yaml, JMS_DESTINATION);
         String correlationId = loadOptionalStr(yaml, JMS_CORRELATION_ID);
-        Integer deliveryMode = loadOptionalInt(yaml, JMS_DELIVERY_MODE);
+        Long deliveryMode = loadOptionalLong(yaml, JMS_DELIVERY_MODE);
         Long expiration = loadOptionalLong(yaml, JMS_EXPIRATION);
-        Integer priority = loadOptionalInt(yaml, JMS_PRIORITY);
+        Long priority = loadOptionalLong(yaml, JMS_PRIORITY);
         Boolean redelivered = loadOptionalBool(yaml, JMS_REDELIVERED);
         String replyTo = loadOptionalStr(yaml, JMS_REPLY_TO);
         Long timestamp = loadOptionalLong(yaml, JMS_TIMESTAMP);
