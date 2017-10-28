@@ -8,7 +8,7 @@ import com.emarte.regurgitator.core.*;
 
 import java.util.Set;
 
-import static com.emarte.regurgitator.core.YmlConfigUtil.loadOptionalStr;
+import static com.emarte.regurgitator.core.YmlConfigUtil.*;
 import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
 
 public class CreateJmsResponseYmlLoader implements YmlLoader<CreateJmsResponse> {
@@ -21,12 +21,12 @@ public class CreateJmsResponseYmlLoader implements YmlLoader<CreateJmsResponse> 
         String type = loadOptionalStr(yaml, JMS_TYPE);
         String destination = loadOptionalStr(yaml, JMS_DESTINATION);
         String correlationId = loadOptionalStr(yaml, JMS_CORRELATION_ID);
-        String deliveryMode = loadOptionalStr(yaml, JMS_DELIVERY_MODE);
-        String expiration = loadOptionalStr(yaml, JMS_EXPIRATION);
-        String priority = loadOptionalStr(yaml, JMS_PRIORITY);
-        String redelivered = loadOptionalStr(yaml, JMS_REDELIVERED);
+        Integer deliveryMode = loadOptionalInt(yaml, JMS_DELIVERY_MODE);
+        Long expiration = loadOptionalLong(yaml, JMS_EXPIRATION);
+        Integer priority = loadOptionalInt(yaml, JMS_PRIORITY);
+        Boolean redelivered = loadOptionalBool(yaml, JMS_REDELIVERED);
         String replyTo = loadOptionalStr(yaml, JMS_REPLY_TO);
-        String timestamp = loadOptionalStr(yaml, JMS_TIMESTAMP);
+        Long timestamp = loadOptionalLong(yaml, JMS_TIMESTAMP);
         return new CreateJmsResponse(response, messageId, type, destination, correlationId, deliveryMode, expiration, priority, redelivered, replyTo, timestamp);
     }
 }
