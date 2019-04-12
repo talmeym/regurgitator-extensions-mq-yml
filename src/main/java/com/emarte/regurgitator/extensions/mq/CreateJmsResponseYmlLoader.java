@@ -12,7 +12,7 @@ import static com.emarte.regurgitator.core.YmlConfigUtil.*;
 import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
 
 public class CreateJmsResponseYmlLoader implements YmlLoader<CreateJmsResponse> {
-    private CreateResponseYmlLoader responseJsonLoader = new CreateResponseYmlLoader();
+    private final CreateResponseYmlLoader responseJsonLoader = new CreateResponseYmlLoader();
 
     @Override
     public CreateJmsResponse load(Yaml yaml, Set<Object> allIds) throws RegurgitatorException {
