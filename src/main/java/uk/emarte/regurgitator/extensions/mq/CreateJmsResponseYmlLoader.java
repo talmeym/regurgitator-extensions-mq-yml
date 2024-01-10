@@ -2,14 +2,14 @@
  * Copyright (C) 2017 Miles Talmey.
  * Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
  */
-package com.emarte.regurgitator.extensions.mq;
+package uk.emarte.regurgitator.extensions.mq;
 
-import com.emarte.regurgitator.core.*;
+import uk.emarte.regurgitator.core.*;
 
 import java.util.Set;
 
-import static com.emarte.regurgitator.core.YmlConfigUtil.*;
-import static com.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
+import static uk.emarte.regurgitator.core.YmlConfigUtil.*;
+import static uk.emarte.regurgitator.extensions.mq.ExtensionsMqConfigConstants.*;
 
 public class CreateJmsResponseYmlLoader implements YmlLoader<CreateJmsResponse> {
     private final CreateResponseYmlLoader responseJsonLoader = new CreateResponseYmlLoader();
