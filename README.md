@@ -66,7 +66,6 @@ a create-jms-response step returns a response from regurgitator, allowing ``resp
 
 ```yml
 create-jms-response:
- name: jms-response-creator
  source: response-param
  jms-message-id: messageid
  jms-type: my-jms-type
