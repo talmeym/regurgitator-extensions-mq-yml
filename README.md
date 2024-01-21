@@ -6,6 +6,8 @@ start your reading here: [regurgitator-all](https://talmeym.github.io/regurgitat
 
 read more about regurgitator in yml here: [regurgitator-core-yml](https://talmeym.github.io/regurgitator-core-yml#yml-configuration-of-regurgitator)
 
+[``apidocs``](https://regurgitator.emarte.uk/apidocs/regurgitator-extensions-mq-yml/0.1.2/)
+
 ## extension mq steps in yml
 
 ### jms-call
